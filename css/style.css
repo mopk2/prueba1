@@ -1,0 +1,131 @@
+/*CARACTERISTICAS GENERALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: #c1ff72;
+}
+
+
+/*ENCABEZADO Y NAV*/
+
+header nav ul li {
+    margin: 22px;
+    font-size: 12px;
+
+    display: inline;
+}
+
+.logoPrincipal {
+    width: 115px;
+    height: 115px;
+}
+
+#superBarra {
+    display: flex;
+    flex-direction: row;
+    background-color: #003748;
+    color: #c1ff72;
+    border-bottom: black 2px solid;
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+
+.titulo {
+    text-align: center;
+}
+
+.barra {
+    height: 115px;
+    margin-left: 275px;
+}
+
+
+
+
+/*CUERPO*/
+
+body {
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    background-color: #a2cacd;
+}
+
+.comencemos {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin: 50px 10px 10px 10px;
+}
+
+
+#imagenPrincipal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    height: 450px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 75px;
+}
+
+
+/*PIE DE PAGINA */
+
+
+
+footer {
+    background-color: #003748;
+    color: #c1ff72;
+    font-size: 12px;
+    border-top: black 2px solid;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.iconos {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    display: block;
+}
+
+.mapaDeSitio {
+    margin-left: 300px;
+    margin-top: 15px;
+}
+
+.derechos {
+    margin-left: 300px;
+    margin-top: 15px;
+}
+
+.maps {
+    margin-left: 75px;
+    margin-top: 15px;
+}
