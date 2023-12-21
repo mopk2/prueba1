@@ -1,0 +1,159 @@
+/*CARACTERISTICAS GENERALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "navBar"
+        "cuerpo"
+        "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 90% 200px;
+}
+
+header {
+    grid-area: navBar;
+    background-color: #003748;
+}
+
+header nav ul li {
+    margin: 22px;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoPrincipal {
+    width: 100px;
+    height: 100px;
+
+}
+
+.items a {
+    text-decoration: none;
+    color: white;
+}
+
+.titulo {
+    color: #c1ff72;
+    font-size: 1.2rem;
+}
+
+
+/*cuerpo*/
+main {
+    grid-area: cuerpo;
+    background-color: #a2cacd;
+}
+
+#servicios {
+
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#servicios h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+#servicios h3 {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.introduccion {
+    margin: 80px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.contenedorTarjetas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    max-width: 1300px;
+}
+
+.tarjetas {
+    background-color: rgb(205, 216, 226);
+    color: black;
+    width: 250px;
+    padding: 30px;
+    margin: 100px 80px 100px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.tarjetas img {
+    width: 120px;
+}
+
+.tarjetas p {
+    margin: 50px 0;
+}
+
+
+/*pie de pagina*/
+
+
+footer {
+    grid-area: pie;
+    background-color: #003748;
+    padding-left: 30px;
+    color: #c1ff72;
+}
+
+.piePagina {
+    display: flex;  
+    flex-direction: row;  
+    justify-content:space-between;
+    align-items: center;
+}
+
+.encontranos p {
+    margin-top: 30px;
+
+}
+
+.ubicacion a img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.mapa {
+    width: 120px;
+    height: 120px;
+}
+
+.mapaSitio {
+
+}
