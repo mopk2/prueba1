@@ -40,7 +40,7 @@ header nav ul li {
     font-family: 'Caveat', cursive;
     font-family: 'Edu TAS Beginner', cursive;
     font-family: 'Libre Baskerville', serif;
-
+    width: 100%;
 }
 
 
@@ -62,6 +62,7 @@ body {
     font-family: 'Caveat', cursive;
     font-family: 'Edu TAS Beginner', cursive;
     background-color: #a2cacd;
+
 }
 
 .comencemos {
@@ -83,6 +84,8 @@ body {
 }
 
 
+
+
 /*PIE DE PAGINA */
 
 
@@ -97,6 +100,7 @@ footer {
     font-family: 'Caveat', cursive;
     font-family: 'Edu TAS Beginner', cursive;
     font-family: 'Libre Baskerville', serif;
+    
 }
 
 .pie {
