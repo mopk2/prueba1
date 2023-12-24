@@ -22,7 +22,7 @@ body {
         "cuerpo"
         "pie";
     grid-template-columns: 100%;
-    grid-template-rows: 100px 90% 200px;
+    grid-template-rows: 100px 90% 250px;
 }
 
 header {
@@ -54,6 +54,8 @@ header nav ul li {
 .titulo {
     color: #c1ff72;
     font-size: 1.2rem;
+    text-align: center;
+    font-style: oblique;
 }
 
 
@@ -65,10 +67,11 @@ main {
 
 #servicios {
 
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 50px;
 }
 
 #servicios h2 {
@@ -118,6 +121,24 @@ main {
     margin: 50px 0;
 }
 
+.conociendome {
+
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+}
+.conociendome img{
+    width: 500px;
+    height: 500px;
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.inicios {
+    margin: 50px;
+    padding: 20px;
+}
 
 /*pie de pagina*/
 
@@ -127,6 +148,8 @@ footer {
     background-color: #003748;
     padding-left: 30px;
     color: #c1ff72;
+    padding-top: 10px;
+   
 }
 
 .piePagina {
@@ -134,23 +157,25 @@ footer {
     flex-direction: row;  
     justify-content:space-between;
     align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+   
 }
 
 .encontranos p {
-    margin-top: 30px;
+    margin-top: 20px;
 
 }
 
 .ubicacion a img {
-    width: 75px;
+    width: 80px;
     height: 75px;
-    padding: 10px;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .mapa {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
 }
 
