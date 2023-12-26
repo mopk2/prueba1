@@ -34,15 +34,19 @@ header nav ul li {
     margin: 22px;
 }
 
-#navBar {
+#navBar-desktop {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.navbar-mobile {
+    display: none;
+}
+
 .logoPrincipal {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 
 }
 
@@ -126,11 +130,14 @@ main {
     margin-bottom: 200px;
     display: flex;
     align-items: center;
-    flex-direction:row;
+    flex-direction: row;
 }
-.conociendome img{
-    width: 500px;
-    height: 500px;
+
+
+
+.conociendome img {
+    width: 400px;
+    height: 400px;
     border-radius: 35px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -149,17 +156,18 @@ footer {
     padding-left: 30px;
     color: #c1ff72;
     padding-top: 10px;
-   
+
 }
 
 .piePagina {
-    display: flex;  
-    flex-direction: row;  
-    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
     margin-left: 25px;
-    margin-right: 25px;
-   
+    
+
 }
 
 .encontranos p {
@@ -177,5 +185,83 @@ footer {
 .mapa {
     width: 150px;
     height: 150px;
+}
+
+.mapaSitio {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar-mobile {
+        display: inline;
+       font-style: italic;
+    }
+
+    .navbar-mobile> .container-fluid {
+        margin-top: 10px;
+    }
+
+    #navBar-desktop {
+        display: none;
+    }
+
+    .conociendome {
+        margin-bottom: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+     .conociendome img {
+        width: 250px;
+        height: 250px;
+        border-radius: 35px;
+       
+    }
+
+    .piePagina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "navBar"
+            "cuerpo"
+            "pie";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 80% 100vh;
+        background-color: #003748;
+    }
+
+
+    #servicios h2 {
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    #servicios h3 {
+        text-align: center;
+        margin-top: 100px;
+        color: white;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    .contenedorTarjetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 40px;
+        max-width: 1300px;
+    }
+
+
 }
 

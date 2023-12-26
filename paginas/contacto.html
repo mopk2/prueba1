@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/logoPrincipal.jpeg" type="image/x-icon">
     <title>Ciudadanias</title>
-    <link rel="stylesheet" href="style.css">
+   <!-- LINK CDN BOOTSTRAP -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,36 +29,62 @@
 
 <body>
     <header>
-        <div id="superBarra">
 
-            <div class="logoPrincipal">
+        <div id="navBar-desktop">
+            <div class="logo">
                 <a href="../index.html">
                     <img src="../imagenes/logo.jpeg" alt="Logo Ciudadanias Abg. Giorgi Andrea" class="logoPrincipal">
                 </a>
             </div>
 
-            <div class="barra">
-
-                <div class="titulo">
-                    <h1>ANDREA GIORGI</h1>
-                    <h3>ABOGADA</h3>
-                </div>
-
-                <div>
-                    <nav>
-                        <ul class="link">
-                            <li> <a href="../index.html">Inicio</a> </li>
-                            <li> <a href="perfil.html">Mi Perfil</a> </li>
-                            <li> <a href="informacion.html">Infomacion Util</a> </li>
-                            <li> <a href="servicios.html">Servicios</a> </li>
-                            <li> <a href="#">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
+            <div class="titulo">
+                <h1>ANDREA GIORGI</h1>
+                <h3>ABOGADA</h3>
             </div>
 
+            <nav class="barra">
+                <ul class="items">
+                    <li> <a href="../index.html">Inicio</a> </li>
+                    <li> <a href="#">Mi Perfil</a> </li>
+                    <li> <a href="informacion.html">Infomacion Util</a> </li>
+                    <li> <a href="servicios.html">Servicios</a> </li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
         </div>
+
+        <nav class=" navbar-mobile navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                
+                <a href="../index.html"><img src="../imagenes/logo.jpeg" alt="Logo Ciudadanias Abg. Giorgi Andrea" class="logoPrincipal"></a>
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mi Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="informacion.html">Informacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
     </header>
 
 
@@ -102,69 +132,80 @@
 
     </main>
 
+ 
     <footer>
-        <div class="pie">
+        
+        <p>TODOS LOS DERECHOS RESERVADOS - <br> JUAN OLIVERA 2023</p>
+        <p>ENCONTRANOS EN</p>
+        <div class="piePagina">
+            
+            <div class="encontranos">
 
-            <div class="atajos">
-
-                <p>ENCONTRANOS EN</p>
-
-                <a href="https://www.instagram.com/">
-                    <img class="iconos" src="../imagenes/logo ig" width="100px" alt="Instagram">
-                </a>
-                <a href="https://web.whatsapp.com/">
-                    <img class="iconos" src="../imagenes/logo whatsapp.jfif" width="100px" alt="Whatsapp">
-                </a>
-                <a href="https://www.google.com/intl/es-419/gmail/about/">
-                    <img class="iconos" src="../imagenes/logo gmail.jfif" width="100px" alt="Gmail">
-                </a>
-
-            </div>
+                
+                <div class="ubicacion">
 
 
-            <div class="maps">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26838.23942501094!2d-60.80261892768389!3d-32.7715735145808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6453783105191%3A0x4e851770e55bc798!2sRicardone%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1699840766766!5m2!1ses-419!2sar"
-                    width="135px" height="135px" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <a href="https://www.instagram.com/">
+                        <img class="ig" src="../imagenes/ig.png" alt="Instagram">
+                    </a>
+                    <a href="https://web.whatsapp.com/">
+                        <img class="wht" src="../imagenes/Whatsapp.png" alt="Whatsapp">
+                    </a>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/">
+                        <img class="mail" src="../imagenes/mail.png" alt="Gmail">
+                    </a>
+                   
+
+                </div>
+
             </div>
 
             <div>
-                <table class="mapaDeSitio">
+                <table class="mapaSitio">
                     <tr>
                         <td>ESPAÑA</td>
-                        <td></td>
-                        <td>VISAS</td>
                     </tr>
                     <tr>
                         <td>ITALIA</td>
-                        <td></td>
-                        <td>ASESORIAS</td>
                     </tr>
                     <tr>
                         <td>PORTUGAL</td>
-                        <td></td>
-                        <td>CIUDADANIAS</td>
                     </tr>
                     <tr>
-                        <td>OTROS PAISES</td>
-                        <td></td>
                         <td>PARTIDAS</td>
                     </tr>
                 </table>
             </div>
 
-            <div class="derechos">
-
-                <p>TODOS LOS DERECHOS RESERVADOS - JUAN OLIVERA 2023</p>
-
+            <div>
+                <table class="mapaSitio">
+                    <tr>
+                        <td>VISAS</td>
+                    </tr>
+                    <tr>
+                        <td>ASESORIAS</td>
+                    </tr>
+                    <tr>
+                        <td>CIUDADANIAS</td>
+                    </tr>
+                    <tr>
+                        <td>OTROS PAISES</td>
+                    </tr>
+                </table>
             </div>
 
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26838.23942501094!2d-60.80261892768389!3d-32.7715735145808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6453783105191%3A0x4e851770e55bc798!2sRicardone%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1699840766766!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="mapa"></iframe>
 
-        </div>
     </footer>
 
 
+    <!--LINK CDN JS BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 
 
